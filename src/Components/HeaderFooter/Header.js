@@ -9,16 +9,35 @@ import IconMenu from '@material-ui/icons/Menu'
 import SideDrawer from './SideDrawer'
 
 class Header extends Component {
-    state={
+    state = {
         drawerOpen: false,
+        headerShow: false
 
+    };
+
+    componentDidMount() {
+        window.addEventListener("scroll", this.scrollHandler);
     }
+
+    scrollHandler = () =>{
+        if(window.scrollY>0){
+            this.setState({
+                headerShow:true
+            })
+        }else{
+            this.setState({
+                headerShow:false
+            })
+        }
+    };
+
 
     toggleDrawer = (value) => {
         this.setState({
             drawerOpen: value
         })
-    }
+    };
+
 
 
     render() {
@@ -26,7 +45,7 @@ class Header extends Component {
             <AppBar
                 position={'fixed'}
                 style={{
-                    backgroundColor: '#212121',
+                    backgroundColor: this.state.headerShow? '#212121' : 'transparent',
                     boxShadow: 'none'
                 }}
             >
@@ -37,10 +56,10 @@ class Header extends Component {
 
 
                     {/*code for handling the smaller devices*/}
-                    <MediaQuery query="(max-width: 600px)">
+                    <MediaQuery query="(max-width: 620px)">
                         <IconButton
                             color={"inherit"}
-                            onClick = {()=>this.toggleDrawer(true)}
+                            onClick={() => this.toggleDrawer(true)}
 
                         >
                             <IconMenu/>
@@ -48,17 +67,37 @@ class Header extends Component {
 
                         <SideDrawer
                             open={this.state.drawerOpen}
-                            onClose={(value)=> this.toggleDrawer(value)}
+                            onClose={(value) => this.toggleDrawer(value)}
                         />
                     </MediaQuery>
 
 
                     {/*Code for Handling larger devices*/}
-                    <MediaQuery query="(min-width: 600px)">
-                        <Button color={"inherit"}>ABOUT US</Button>
-                        <Button color={"inherit"}>SERVICES</Button>
-                        <Button color={"inherit"}>OFFICES</Button>
-                        <Button color={"inherit"}>PROJECTS</Button>
+                    <MediaQuery query="(min-width: 620px)">
+                        <Button
+                            onClick={()=>{console.log('About US')}}
+                            color={"inherit"}>
+                            ABOUT US
+                        </Button>
+
+                        <Button
+                            onClick={()=>{console.log('SERVICES')}}
+                            color={"inherit"}>
+                            SERVICES
+                        </Button>
+
+                        <Button
+                            onClick={()=>{console.log('OFFICE LOCATIONS')}}
+                            color={"inherit"}>
+                            OFFICE LOCATIONS
+                        </Button>
+
+                        <Button
+                            onClick={()=>{console.log('OUR PROJECTS')}}
+                            color={"inherit"}>
+                            OUR PROJECTS
+                        </Button>
+
                     </MediaQuery>
 
 

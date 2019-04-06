@@ -6,7 +6,10 @@ import Header from './Components/HeaderFooter/Header'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{
+        height: '1500px',
+        backgroundColor:'blue'
+      }}>
         <Header/>
       </div>
     );
