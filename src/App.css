@@ -1,19 +1,8 @@
 
 .HeaderContainer{
     flex-grow: 1;
-}
-
-.HeaderHeading{
     font-family: Righteous;
-    font-size: 1.5em;
-
+    font-size: 1.75em;
 }
 
-.HeaderSubHeading{
-    font-family: Roboto;
-    font-size: 0.8em;
-}
 
-.ButtonColor{
-    background-color: white;
-}

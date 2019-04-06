@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import '../../App.css'
-import MenuIcon from '@material-ui/core/Menu';
-import Button from '@material-ui/core/Button'
+import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
 
 
 class Header extends Component {
@@ -18,21 +18,12 @@ class Header extends Component {
             >
                 <Toolbar>
                     <div className={'HeaderContainer'}>
-
-                        <div className={'HeaderHeading'}>
-                            SELTERS
-                        </div>
-
-                        <div className={'HeaderSubHeading'}>
-                            ENGINEERING SERVICES
-                        </div>
-
+                        SHELTERS
                     </div>
 
-                    <Button color={"inherit"}>About Us</Button>
-                    <Button color={"inherit"}>Service</Button>
-                    <Button color={"inherit"}>Location</Button>
-                    <Button color={"inherit"}>Projects</Button>
+                    <IconButton color={"inherit"} aria-label="Menu">
+                        <MenuIcon />
+                    </IconButton>
 
                 </Toolbar>
             </AppBar>
