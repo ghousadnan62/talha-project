@@ -19,14 +19,14 @@ class Header extends Component {
         window.addEventListener("scroll", this.scrollHandler);
     }
 
-    scrollHandler = () =>{
-        if(window.scrollY>0){
+    scrollHandler = () => {
+        if (window.scrollY > 0) {
             this.setState({
-                headerShow:true
+                headerShow: true
             })
-        }else{
+        } else {
             this.setState({
-                headerShow:false
+                headerShow: false
             })
         }
     };
@@ -39,13 +39,12 @@ class Header extends Component {
     };
 
 
-
     render() {
         return (
             <AppBar
                 position={'fixed'}
                 style={{
-                    backgroundColor: this.state.headerShow? '#212121' : 'transparent',
+                    backgroundColor: this.state.headerShow ? '#212121' : 'transparent',
                     boxShadow: 'none'
                 }}
             >
@@ -75,25 +74,33 @@ class Header extends Component {
                     {/*Code for Handling larger devices*/}
                     <MediaQuery query="(min-width: 620px)">
                         <Button
-                            onClick={()=>{console.log('About US')}}
+                            onClick={() => {
+                                console.log('About US')
+                            }}
                             color={"inherit"}>
                             ABOUT US
                         </Button>
 
                         <Button
-                            onClick={()=>{console.log('SERVICES')}}
+                            onClick={() => {
+                                console.log('SERVICES')
+                            }}
                             color={"inherit"}>
                             SERVICES
                         </Button>
 
                         <Button
-                            onClick={()=>{console.log('OFFICE LOCATIONS')}}
+                            onClick={() => {
+                                console.log('OFFICE LOCATIONS')
+                            }}
                             color={"inherit"}>
                             OFFICE LOCATIONS
                         </Button>
 
                         <Button
-                            onClick={()=>{console.log('OUR PROJECTS')}}
+                            onClick={() => {
+                                console.log('OUR PROJECTS')
+                            }}
                             color={"inherit"}>
                             OUR PROJECTS
                         </Button>
