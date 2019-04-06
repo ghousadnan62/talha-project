@@ -12,9 +12,11 @@ const ImageSlider = () => {
         dots: true,
         infinite: true,
         speed: 500,
+        autoplay:true,
+        arrows:true,
         slidesToShow: 1,
         slidesToScroll: 1
-    }
+    };
 
 
 
@@ -22,7 +24,6 @@ const ImageSlider = () => {
         <div style={{
             overflow:"hidden",
             height:`${window.innerHeight}px`,
-            width:`${window.innerWidth}px`,
         }}>
             <Slider {...settings}>
                 <div >
