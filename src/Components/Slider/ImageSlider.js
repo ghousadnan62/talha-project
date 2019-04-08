@@ -49,7 +49,6 @@ const ImageSlider = () => {
                             backgroundSize:"cover"
                         }}
                     >
-                        Ecce, fortis canis!
                     </div>
                 </div>
 

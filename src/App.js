@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import Header from './Components/HeaderFooter/Header'
-import Slider from './Components/Slider/index'
 import './App.css'
+import HomeScreen from './Screens/HomeScreen'
 
 class App extends Component {
     render() {
@@ -9,8 +8,7 @@ class App extends Component {
             <div className="App" style={{
                 height:'2000px'
             }}>
-                <Header/>
-                <Slider/>
+                <HomeScreen/>
             </div>
         );
     }

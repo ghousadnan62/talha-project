@@ -30,12 +30,22 @@ const SideDrawer = (props) => {
                 <Divider/>
 
                 <ListItem button onClick={() => console.log('Offices')}>
-                    OFFICE LOCATIONS
+                   LOCATIONS
                 </ListItem>
                 <Divider/>
 
                 <ListItem button onClick={() => console.log('Project')}>
-                    OUR PROJECTS
+                    PROJECTS
+                </ListItem>
+                <Divider/>
+
+                <ListItem button onClick={() => console.log('Project')}>
+                    OUR ASSOCIATES
+                </ListItem>
+                <Divider/>
+
+                <ListItem button onClick={() => console.log('Project')}>
+                    BLOG
                 </ListItem>
                 <Divider/>
 

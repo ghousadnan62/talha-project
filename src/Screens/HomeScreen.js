@@ -1,54 +1,17 @@
 import React, {Component} from 'react';
-import '../../App.css';
+import '../App.css'
+import Header from '../Components/HeaderFooter/Header';
+import Slider from '../Components/Slider/index';
 
 
-
-
-class HomeScreen extends Component {
-    //setting state
-    state = {
-        drawerOpen: false,
-        headerShow: false
-
-    };
-
-    // Attaching scroll listener to the window
-    componentDidMount() {
-        window.addEventListener("scroll", this.scrollHandler);
-    }
-
-
-    // function to change state upon scroll
-    scrollHandler = () => {
-        if (window.scrollY > 0) {
-            this.setState({
-                headerShow: true
-            })
-        } else {
-            this.setState({
-                headerShow: false
-            })
-        }
-    };
-
-
-    //functions to handle the drawer opening and closing
-    toggleDrawer = (value) => {
-        this.setState({
-            drawerOpen: value
-        })
-    };
-
-
-
+export default class HomeScreen extends Component {
 
     render() {
         return (
             <div>
-
+                <Header/>
+                <Slider/>
             </div>
         );
     }
 }
-
-export default HomeScreen;
