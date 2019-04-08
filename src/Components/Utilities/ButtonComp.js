@@ -1,6 +1,6 @@
 import Button from "@material-ui/core/Button";
 import React from "react";
-
+import '../../App.css'
 
 /*
 * Custom Button; Uses following Props
@@ -10,7 +10,7 @@ import React from "react";
 const ButtonComp = (props) => (
         <Button
             onClick={props.onClick}
-            color={'inherit'}
+            className={'headerButton'}
         >
             {props.children.toUpperCase()}
         </Button>

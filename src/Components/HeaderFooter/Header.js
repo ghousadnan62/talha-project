@@ -57,7 +57,7 @@ class Header extends Component {
                 }}
             >
                 <Toolbar>
-                    <div className={'HeaderContainer'}>
+                    <div className={'headerContainer'}>
                         SHELTERS
                     </div>
 

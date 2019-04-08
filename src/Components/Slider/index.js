@@ -1,11 +1,18 @@
 import React from 'react';
 import ImageSlider from './ImageSlider'
+import '../../App.css'
 
 
 const Index = () => {
     return (
-        <div>
+        <div className={'sliderWrapper'}>
+
             <ImageSlider/>
+
+            <div className={'companyName'}>
+                Shelters <br/> Engineering <br/> Services
+            </div>
+
         </div>
     );
 };
