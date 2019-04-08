@@ -5,9 +5,7 @@ import HomeScreen from './Screens/HomeScreen'
 class App extends Component {
     render() {
         return (
-            <div className="App" style={{
-                height:'2000px'
-            }}>
+            <div className="App">
                 <HomeScreen/>
             </div>
         );
