@@ -7,7 +7,7 @@ import MediaQuery from 'react-responsive';
 import IconButton from '@material-ui/core/IconButton';
 import IconMenu from '@material-ui/icons/Menu'
 import SideDrawer from './SideDrawer'
-
+import {ScreenBreakPoint1} from '../Utilities/ScreenBreakPoint'
 
 class Header extends Component {
 
@@ -63,7 +63,7 @@ class Header extends Component {
 
 
                     {/*code for handling the smaller devices*/}
-                    <MediaQuery query="(max-width: 620px)">
+                    <MediaQuery maxWidth={ScreenBreakPoint1}>
                         <IconButton
                             color={"inherit"}
                             onClick={() => this.toggleDrawer(true)}
@@ -80,7 +80,7 @@ class Header extends Component {
 
 
                     {/*Code for Handling larger devices*/}
-                    <MediaQuery query="(min-width: 620px)">
+                    <MediaQuery minWidth={ScreenBreakPoint1}>
                         <ButtonComp>
                             about us
                         </ButtonComp>
