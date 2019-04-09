@@ -1,8 +1,8 @@
 import React from 'react';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Divider from '@material-ui/core/Divider'
+import Drawer from '@material-ui/core/Drawer/index';
+import List from '@material-ui/core/List/index';
+import ListItem from '@material-ui/core/ListItem/index';
+import Divider from '@material-ui/core/Divider/index'
 
 
 const SideDrawer = (props) => {

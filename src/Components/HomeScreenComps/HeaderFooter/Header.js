@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import '../../App.css';
-import ButtonComp from '../Utilities/ButtonComp'
+import AppBar from '@material-ui/core/AppBar/index';
+import Toolbar from '@material-ui/core/Toolbar/index';
+import '../../../App.css';
+import ButtonComp from '../../Utilities/ButtonComp'
 import MediaQuery from 'react-responsive';
 import IconButton from '@material-ui/core/IconButton';
 import IconMenu from '@material-ui/icons/Menu'
 import SideDrawer from './SideDrawer'
-import {ScreenBreakPoint1} from '../Utilities/ScreenBreakPoint'
+import {ScreenBreakPoint1} from '../../Utilities/ScreenBreakPoint'
 
 class Header extends Component {
 

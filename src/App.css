@@ -1,25 +1,37 @@
 body {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
-.App{
+
+.App {
     margin: 0;
     padding: 0;
 }
-.upperCase{
+
+.upperCase {
     text-transform: uppercase;
 }
 
-.fontRighteous{
+.fontRighteous {
     font-family: Righteous;
 }
 
-.themeFontColor{
+.themeFontColor {
     color: #FBF5C5;
 }
 
-/*---------------------------------------------------*/
-.headerContainer{
+.themeBackground {
+    background: rgba(67, 61, 29, 1);
+}
+
+
+
+
+/*------------------------
+Header Section
+---------------------------
+*/
+.headerContainer {
     flex-grow: 1;
     font-family: Righteous;
     font-size: 1.75em;
@@ -30,36 +42,112 @@ body {
     color: #FBF5C5 !important;
 }
 
-/*---------------------------------------------------*/
+/*-------------------------
+Home Screen first Slide Section
+--------------------------*/
 .sliderWrapper {
     position: relative;
 }
 
-.textWrapper{
+.textWrapper {
     position: absolute;
-    top: 30%;
-    left: 40%;
-    margin-right: 50%;
-    margin-bottom: 40%;
-
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
 }
 
 
 .companyName {
-    color:#FBF5C5 ;
+    color: #FBF5C5;
     font-size: 2.5em;
-    background-color:rgba(67,61,29,0.7);
-    text-align: center;
+    background-color: rgba(67, 61, 29, 0.7);
+
 }
 
 .slogan {
-    position: absolute;
-    top: 60%;
-    left:39%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em;
-    background-color:rgba(67,61,29,1);
+    font-size: 1.4rem;
+    background-color: rgba(67, 61, 29, 1);
+}
+
+/*---------------------------
+Our Serives (Home Screen)
+----------------------------*/
+.servicesInfoWrapper{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.titleStyling{
+    font-family: Righteous;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+.iconsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: solid;
+}
+
+.iconsStyling{
+    display: flex;
+    border: solid;
+    justify-content: space-around;
 
 }
 
-/*-------------------------------------------------------*/
+.bordered{
+    border: solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (max-width: 700px) {
+    .companyName{
+        font-size: 1.5em;
+    }
+    .slogan{
+        font-size: 1em;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+

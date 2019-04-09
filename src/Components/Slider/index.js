@@ -1,29 +1,30 @@
 import React from 'react';
 import ImageSlider from './ImageSlider'
 import '../../App.css'
-import Slide from 'react-reveal'
+import Zoom from 'react-reveal'
 
 const Index = () => {
     return (
-        <div className={'sliderWrapper'}>
+        <div  className={'sliderWrapper'}>
 
             <ImageSlider/>
 
-            <div>
-                <Slide top>
-                    <div className={'textWrapper'}>
+            <div className={'textWrapper'}>
+                <Zoom delay={1000}>
+                    <div>
                         <div className={'companyName upperCase fontRighteous'}>
                             <p>Shelters <br/> Engineering <br/> Services</p>
                         </div>
                     </div>
-                </Slide>
+                </Zoom>
 
-                <Slide bottom>
-
-                    <div className={'slogan upperCase themeFontColor'}>
-                        We Build Your Dreams
+                <Zoom delay={3000}>
+                    <div>
+                        <div className={'slogan upperCase themeFontColor'}>
+                            <p>We build your dreams</p>
+                        </div>
                     </div>
-                </Slide>
+                </Zoom>
             </div>
 
         </div>
