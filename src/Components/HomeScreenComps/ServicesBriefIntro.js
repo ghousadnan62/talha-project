@@ -20,7 +20,11 @@ import {
 const ServicesBriefIntro = () => {
     return (
 
-        <div className={'servicesInfoWrapper themeBackground'}>
+        <div className={'servicesInfoWrapper themeBackground'}
+            style={{
+                height:`${window.innerHeight}px`
+            }}
+        >
 
             <div className={'titleStyling themeFontColor'}>
                 Our Services
@@ -41,7 +45,7 @@ const ServicesBriefIntro = () => {
 
                     <IconComp
                         iconName={faDoorOpen}
-                        titleText={'Interior design'}
+                        titleText={'Interior Works'}
                     />
                 </div>
 
@@ -71,7 +75,7 @@ const ServicesBriefIntro = () => {
                     />
                     <IconComp
                         iconName={faKey}
-                        titleText={'Turnkey Solution'}
+                        titleText={'Turnkey'}
                     />
 
                     <IconComp
