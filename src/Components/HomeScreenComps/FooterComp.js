@@ -18,6 +18,7 @@ const FooterComp = () => {
                 flexDirection:'row',
                 justifyContent:'space-between',
                 alignItems:'center',
+                padding:'1em'
 
             }}
 
@@ -51,7 +52,6 @@ const FooterComp = () => {
                 display:'flex',
                 flex:1,
                 justifyContent:'space-around',
-                marginBottom:'1em'
             }}>
                 <FontAwesomeIcon
                     icon={faFacebookF}
