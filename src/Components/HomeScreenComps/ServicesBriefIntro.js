@@ -3,7 +3,8 @@ import '../../App.css'
 import IconComp from '../Utilities/IconComp'
 import MediaQuery from 'react-responsive';
 import {ScreenBreakPoint1} from '../Utilities/ScreenBreakPoint';
-
+import Jump from 'react-reveal/Jump';
+import Fade from 'react-reveal/Fade';
 import {
     faDraftingCompass,
     faBuilding,
@@ -25,7 +26,7 @@ const ServicesBriefIntro = () => {
             <MediaQuery minWidth={ScreenBreakPoint1}>
                 <div className={'servicesInfoWrapper themeBackground'}
                      style={{
-                         height: `${window.innerHeight}px`
+                        /* height: `${window.innerHeight}px`*/
                      }}
                 >
 
@@ -34,64 +35,90 @@ const ServicesBriefIntro = () => {
                     </div>
 
 
-                    <div className={'iconsWrapper'}>
+                    <div>
+                        <Fade left delay={200}>
+                            <div className={'iconsStyling'}>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faDraftingCompass}
+                                        titleText={'Designing'}
+                                    />
+                                </div>
 
-                        <div className={'iconsStyling'}>
-                            <IconComp
-                                iconName={faDraftingCompass}
-                                titleText={'Designing'}
-                            />
-                            <IconComp
-                                iconName={faBuilding}
-                                titleText={'Infrastructure'}
-                            />
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faBuilding}
+                                        titleText={'Infrastructure works'}
+                                    />
+                                </div>
 
-                            <IconComp
-                                iconName={faDoorOpen}
-                                titleText={'Interior Works'}
-                            />
-                        </div>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faDoorOpen}
+                                        titleText={'Interior design works'}
+                                    />
+                                </div>
+                            </div>
 
-
-                        <div className={'iconsStyling'}>
-                            <IconComp
-                                iconName={faUserShield}
-                                titleText={'Supervision'}
-                            />
-                            <IconComp
-                                iconName={faTree}
-                                titleText={'Landscaping'}
-                            />
-
-                            <IconComp
-                                iconName={faHardHat}
-                                titleText={'Construction'}
-                            />
-                        </div>
+                        </Fade>
 
 
-                        <div className={'iconsStyling'}>
-                            <IconComp
-                                iconName={faHandshake}
-                                titleText={'Consultancy'}
-                            />
-                            <IconComp
-                                iconName={faKey}
-                                titleText={'Turnkey'}
-                            />
+                        <Fade left delay={550}>
+                            <div className={'iconsStyling'}>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faTree}
+                                        titleText={'Landscaping'}
+                                    />
+                                </div>
 
-                            <IconComp
-                                iconName={faLeaf}
-                                titleText={'Green Design'}
-                            />
-                        </div>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faUserShield}
+                                        titleText={'Supervision'}
+                                    />
+                                </div>
 
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faKey}
+                                        titleText={'Turnkey Solution'}
+                                    />
+                                </div>
+                            </div>
+                        </Fade>
+
+
+                        <Fade left delay={900}>
+                            <div className={'iconsStyling'}>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faHardHat}
+                                        titleText={'Construction'}
+                                    />
+                                </div>
+
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faHandshake}
+                                        titleText={'Consultancy'}
+                                    />
+                                </div>
+
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faLeaf}
+                                        titleText={' Green building Design '}
+                                    />
+                                </div>
+                            </div>
+                        </Fade>
                     </div>
                 </div>
             </MediaQuery>
 
 
-           {/* -----------------------------------------------------------------
+            {/* -----------------------------------------------------------------
             //Media Query for Mobiles
             //Here the icons components are 6
             instead of 9
@@ -100,7 +127,7 @@ const ServicesBriefIntro = () => {
             <MediaQuery maxWidth={ScreenBreakPoint1}>
                 <div className={'servicesInfoWrapper themeBackground'}
                      style={{
-                         height: `${window.innerHeight}px`
+                         /*height: `${window.innerHeight}px`*/
                      }}
                 >
 
@@ -109,45 +136,84 @@ const ServicesBriefIntro = () => {
                     </div>
 
 
-                    <div className={'iconsWrapper'}>
+                    <div>
+                        <Fade left delay={200}>
+                            <div className={'iconsStyling'}>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faDraftingCompass}
+                                        titleText={'Designing'}
+                                    />
+                                </div>
 
-                        <div className={'iconsStyling'}>
-                            <IconComp
-                                iconName={faDraftingCompass}
-                                titleText={'Designing'}
-                            />
-                            <IconComp
-                                iconName={faBuilding}
-                                titleText={'Infrastructure'}
-                            />
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faBuilding}
+                                        titleText={'Infrastructure works'}
+                                    />
+                                </div>
 
-                        </div>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faDoorOpen}
+                                        titleText={'Interior design works'}
+                                    />
+                                </div>
+                            </div>
 
-
-                        <div className={'iconsStyling'}>
-                            <IconComp
-                                iconName={faUserShield}
-                                titleText={'Supervision'}
-                            />
-
-                            <IconComp
-                                iconName={faHardHat}
-                                titleText={'Construction'}
-                            />
-                        </div>
+                        </Fade>
 
 
-                        <div className={'iconsStyling'}>
-                            <IconComp
-                                iconName={faHandshake}
-                                titleText={'Consultancy'}
-                            />
-                            <IconComp
-                                iconName={faKey}
-                                titleText={'Turnkey'}
-                            />
-                        </div>
+                        <Fade left delay={550}>
+                            <div className={'iconsStyling'}>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faTree}
+                                        titleText={'Landscaping'}
+                                    />
+                                </div>
 
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faUserShield}
+                                        titleText={'Supervision'}
+                                    />
+                                </div>
+
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faKey}
+                                        titleText={'Turnkey Solution'}
+                                    />
+                                </div>
+                            </div>
+                        </Fade>
+
+
+                        <Fade left delay={900}>
+                            <div className={'iconsStyling'}>
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faHardHat}
+                                        titleText={'Construction'}
+                                    />
+                                </div>
+
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faHandshake}
+                                        titleText={'Consultancy'}
+                                    />
+                                </div>
+
+                                <div className={'iconPosition'}>
+                                    <IconComp
+                                        iconName={faLeaf}
+                                        titleText={' Green building Design '}
+                                    />
+                                </div>
+                            </div>
+                        </Fade>
                     </div>
                 </div>
             </MediaQuery>
