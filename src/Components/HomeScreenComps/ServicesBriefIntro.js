@@ -3,7 +3,6 @@ import '../../App.css'
 import IconComp from '../Utilities/IconComp'
 import MediaQuery from 'react-responsive';
 import {ScreenBreakPoint1} from '../Utilities/ScreenBreakPoint';
-import Jump from 'react-reveal/Jump';
 import Fade from 'react-reveal/Fade';
 import {
     faDraftingCompass,

@@ -12,12 +12,12 @@ import {faCircle} from "@fortawesome/free-solid-svg-icons";
 
 
 
-const iconSize = '7x';
-const themeColor = '#FBF5C5';
-const tranfromCont = 'shrink-7';
-const maskingShape=faCircle;
 
 const IconComp=(props)=>{
+    const iconSize = '7x';
+    const themeColor = '#FBF5C5';
+    const tranfromCont = 'shrink-7';
+    const maskingShape=faCircle;
     return(
         <div className={'iconTextAdjustment'}>
 
