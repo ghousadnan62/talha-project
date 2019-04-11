@@ -18,14 +18,12 @@ const MeetUsContainer = () => {
 
     return (
         <div style={{
-            width:400,
-            height:400
+            width:'600px',
+            height:'700px'
         }}>
             <Slider  {...settings}>
                 <div>
-                    <div style={{
-                        width: 300
-                    }}>
+                    <div>
                         Islamabad Office
                         {islamabadOfficeLocation}
                     </div>

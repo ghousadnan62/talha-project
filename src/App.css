@@ -150,6 +150,8 @@ Brief About Us Section
     display: flex;
     flex-direction: column;
     padding: 2em;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .aboutUSContentWrapper{
@@ -175,7 +177,7 @@ Brief About Us Section
 
 
 .subSubHeading{
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: bold;
     text-transform: capitalize;
     margin: 1em;
@@ -212,6 +214,10 @@ Brief About Us Section
 
 .lhrAddressSpaceAdjust{
     /*padding: 2em;*/
+}
+
+.textStyling{
+    font-size: 1.3em;
 }
 
 

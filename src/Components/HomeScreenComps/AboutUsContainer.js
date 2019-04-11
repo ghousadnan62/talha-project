@@ -1,8 +1,5 @@
 import React from 'react';
-import '../../App.css'
-import MediaQuery from 'react-responsive';
-import {ContactUsBreakPoint} from '../Utilities/ScreenBreakPoint';
-import ContactUsCardComp from '../HomeScreenComps/ContactUsCardComp';
+import '../../App.css';
 import MeetUsContainer from './MeetUsContainer'
 
 
@@ -10,47 +7,27 @@ const AboutUsContainer = () => {
 
     return (
 
+        <div className={'briefAboutUsWrapper'}>
+            <div className={'titleStyling themeDarkFontColor'}>
+                About Us
+            </div>
+            <div className={'textStyling themeDarkFontColor'}>
+                Shelters Engineering services was formed by a group of vibrant engineers and architects from
+                professional institutions of Pakistan with the aim to provide general contracting, construction
+                management and pre-engineered metal building services to a broad range of residential, commercial and
+                industrial clients throughout the country.
+            </div>
 
-        <div>
-
-            {/*Content from Larger SCreens*/}
-            <MediaQuery minWidth={ContactUsBreakPoint}>
-
-                <div className={'briefAboutUsWrapper'}>
-                    <div className={'titleStyling themeDarkFontColor'}>
-                        About Us
-                    </div>
-
-
-                    <div className={'aboutUSContentWrapper'}>
-                        <div style={{
-                            flex:1
-                        }}>
-                            <ContactUsCardComp/>
-                        </div>
-                        {/*-------------------------------------------------
-
-                        Meet us Section
-                        */}
-
-                        <div className={'contactUSContentWrapper'}>
-                            <div className={'border'} style={{flex:1}}>
-                                <div className={'subHeading themeDarkFontColor'}>
-                                    Meet Us
-                                </div>
-                                <div>
-                                    <MeetUsContainer/>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+            <div className={'flexColumnCenter'}>
+                <div className={'subSubHeading themeDarkFontColor'}>
+                    Office Information
                 </div>
+                <div>
 
-            </MediaQuery>
-
-
+                </div>
+            </div>
         </div>
+
     );
 };
 
