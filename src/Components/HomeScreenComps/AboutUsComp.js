@@ -2,6 +2,9 @@ import React from 'react';
 import '../../App.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone, faHome} from "@fortawesome/free-solid-svg-icons";
+import MediaQuery from 'react-responsive';
+import {ContactUsBreakPoint} from '../Utilities/ScreenBreakPoint'
+
 
 const AboutUsComp = () => {
     const iconColor = '#433D1D';
@@ -38,157 +41,172 @@ const AboutUsComp = () => {
     const bahawalpurEng1ph = '+92 300 9680086';
 
     return (
-        <div className={'briefAboutUsWrapper'}>
-            <div className={'titleStyling themeDarkFontColor'}>
-                About Us
-            </div>
 
 
-            <div className={'aboutUSContentWrapper'}>
+        <div>
 
-                <div className={'contactUSContentWrapper'}>
+            {/*Content from Larger SCreens*/}
+            <MediaQuery minWidth={ContactUsBreakPoint}>
+                <div className={'briefAboutUsWrapper'}>
+                    <div className={'titleStyling themeDarkFontColor'}>
+                        About Us
+                    </div>
 
-                    <div className={'border'}>
 
-                        <div className={'subHeading themeDarkFontColor'}>
-                            Contact Us
+                    <div className={'aboutUSContentWrapper'}>
+
+                        <div className={'contactUSContentWrapper'}>
+
+                            <div className={'border'}>
+
+                                <div className={'subHeading themeDarkFontColor'}>
+                                    Contact Us
+                                </div>
+
+
+                                {/*-----------------------Islamabad Office-------------------------*/}
+
+                                <div className={'subSubHeading flexColumnCenter'}>
+                                    Islamabad Office
+
+                                    <div className={'officeInfoWrapper'}>
+
+                                        <div className={'flexRowCenter'}>
+                                            <FontAwesomeIcon icon={faHome} size={iconSize}
+                                                             transform={transformIconHome}/>
+                                            {islamabadAddress}
+                                        </div>
+
+                                        <div className={'flexRowCenter spaceEvenlyFlex paddingTop'}>
+                                            <div>
+                                                {islamabadEng1Name}
+                                            </div>
+                                            <div>
+                                                <FontAwesomeIcon icon={faPhone} size={iconSize}
+                                                                 transform={transformIconPhone}/>
+                                                {islamabadEng1Ph}
+                                            </div>
+                                        </div>
+
+                                        <div className={'flexRowCenter spaceEvenlyFlex'}>
+                                            <div>
+                                                {islamabadEng2Name}
+                                            </div>
+                                            <div>
+                                                <FontAwesomeIcon icon={faPhone} size={iconSize}
+                                                                 transform={transformIconPhone}/>
+                                                {islamabadEng2Ph}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                {/*-----------------------Lahore Office-------------------------*/}
+                                <div className={'subSubHeading flexColumnCenter'}>
+                                    Lahore Office
+
+                                    <div className={'officeInfoWrapper'}>
+
+                                        <div className={'flexRowCenter'}>
+                                            <FontAwesomeIcon icon={faHome} size={iconSize}
+                                                             transform={transformIconHome}/>
+                                            {lahoreAddress}
+                                        </div>
+
+
+                                        <div style={{
+                                            width: '150%',
+                                            position: 'relative',
+                                            left: '-30%'
+                                        }}>
+                                            <div className={'flexRowCenter spaceEvenlyFlex paddingTop'}>
+                                                <div className={'lhrAddressSpaceAdjust'}>
+                                                    {lahoreEng1Name}
+                                                </div>
+                                                <div className={'lhrAddressSpaceAdjust'}>
+                                                    <FontAwesomeIcon icon={faPhone} size={iconSize}
+                                                                     transform={transformIconPhone}/>
+                                                    {lahoreEng1Ph}
+                                                </div>
+                                            </div>
+
+                                            <div className={'flexRowCenter spaceEvenlyFlex'}>
+                                                <div className={'lhrAddressSpaceAdjust'}>
+                                                    {lahoreEng2Name}
+                                                </div>
+                                                <div className={'lhrAddressSpaceAdjust'}>
+                                                    <FontAwesomeIcon icon={faPhone} size={iconSize}
+                                                                     transform={transformIconPhone}/>
+                                                    {lahoreEng2Ph}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                {/*-----------------------Bahawalpur Office-------------------------*/}
+                                <div className={'subSubHeading flexColumnCenter'}>
+                                    Bahwalpur Office
+
+                                    <div className={'officeInfoWrapper'}>
+
+                                        <div className={'flexRowCenter'}>
+                                            <FontAwesomeIcon icon={faHome} size={iconSize}
+                                                             transform={transformIconHome}/>
+                                            {bahwalpurAddress}
+                                        </div>
+
+                                        <div className={'flexRowCenter spaceEvenlyFlex paddingTop'}>
+                                            <div>
+                                                {bahawalpurEngr1}
+                                            </div>
+                                            <div>
+                                                <FontAwesomeIcon icon={faPhone} size={iconSize}
+                                                                 transform={transformIconPhone}/>
+                                                {bahawalpurEng1ph}
+                                            </div>
+                                        </div>
+
+                                        <div className={'flexRowCenter spaceEvenlyFlex'}>
+                                            <div>
+                                                {lahoreEng1Name}
+                                            </div>
+                                            <div>
+                                                <FontAwesomeIcon icon={faPhone} size={iconSize}
+                                                                 transform={transformIconPhone}/>
+                                                {lahoreEng1Ph}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
                         </div>
 
 
-                        {/*-----------------------Islamabad Office-------------------------*/}
-
-                        <div className={'subSubHeading flexColumnCenter'}>
-                            Islamabad Office
-
-                            <div className={'officeInfoWrapper'}>
-
-                                <div className={'flexRowCenter'}>
-                                    <FontAwesomeIcon icon={faHome} size={iconSize} transform={transformIconHome}/>
-                                    {islamabadAddress}
+                        <div className={'contactUSContentWrapper'}>
+                            <div className={'border'}>
+                                <div className={'subHeading themeDarkFontColor'}>
+                                    Meet Us
                                 </div>
-
-                                <div className={'flexRowCenter spaceEvenlyFlex paddingTop'}>
-                                    <div>
-                                        {islamabadEng1Name}
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon={faPhone} size={iconSize} transform={transformIconPhone}/>
-                                        {islamabadEng1Ph}
-                                    </div>
-                                </div>
-
-                                <div className={'flexRowCenter spaceEvenlyFlex'}>
-                                    <div>
-                                        {islamabadEng2Name}
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon={faPhone} size={iconSize} transform={transformIconPhone}/>
-                                        {islamabadEng2Ph}
-                                    </div>
+                                <div>
+                                    Meet us Info
                                 </div>
                             </div>
-
                         </div>
-
-
-                        {/*-----------------------Lahore Office-------------------------*/}
-                        <div className={'subSubHeading flexColumnCenter'}>
-                            Lahore Office
-
-                            <div className={'officeInfoWrapper'}>
-
-                                <div className={'flexRowCenter'}>
-                                    <FontAwesomeIcon icon={faHome} size={iconSize} transform={transformIconHome}/>
-                                    {lahoreAddress}
-                                </div>
-
-
-                                <div style={{
-                                    width: '150%',
-                                    position:'relative',
-                                    left:'-30%'
-                                }}>
-                                    <div className={'flexRowCenter spaceEvenlyFlex paddingTop'}>
-                                        <div className={'lhrAddressSpaceAdjust'}>
-                                            {lahoreEng1Name}
-                                        </div>
-                                        <div className={'lhrAddressSpaceAdjust'}>
-                                            <FontAwesomeIcon icon={faPhone} size={iconSize}
-                                                             transform={transformIconPhone}/>
-                                            {lahoreEng1Ph}
-                                        </div>
-                                    </div>
-
-                                    <div className={'flexRowCenter spaceEvenlyFlex'}>
-                                        <div className={'lhrAddressSpaceAdjust'}>
-                                            {lahoreEng2Name}
-                                        </div>
-                                        <div className={'lhrAddressSpaceAdjust'}>
-                                            <FontAwesomeIcon icon={faPhone} size={iconSize}
-                                                             transform={transformIconPhone}/>
-                                            {lahoreEng2Ph}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        {/*-----------------------Bahawalpur Office-------------------------*/}
-                        <div className={'subSubHeading flexColumnCenter'}>
-                            Bahwalpur Office
-
-                            <div className={'officeInfoWrapper'}>
-
-                                <div className={'flexRowCenter'}>
-                                    <FontAwesomeIcon icon={faHome} size={iconSize} transform={transformIconHome}/>
-                                    {bahwalpurAddress}
-                                </div>
-
-                                <div className={'flexRowCenter spaceEvenlyFlex paddingTop'}>
-                                    <div>
-                                        {bahawalpurEngr1}
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon={faPhone} size={iconSize} transform={transformIconPhone}/>
-                                        {bahawalpurEng1ph}
-                                    </div>
-                                </div>
-
-                                <div className={'flexRowCenter spaceEvenlyFlex'}>
-                                    <div>
-                                        {lahoreEng1Name}
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon={faPhone} size={iconSize} transform={transformIconPhone}/>
-                                        {lahoreEng1Ph}
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
 
                     </div>
                 </div>
 
+            </MediaQuery>
 
-                <div className={'contactUSContentWrapper'}>
-                    <div className={'border'}>
-                        <div className={'subHeading themeDarkFontColor'}>
-                            Meet Us
-                        </div>
-                        <div>
-                            Meet us Info
-                        </div>
-                    </div>
-                </div>
 
-            </div>
         </div>
     );
 };
