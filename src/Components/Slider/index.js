@@ -1,7 +1,6 @@
 import React from 'react';
 import ImageSlider from './ImageSlider'
 import '../../App.css'
-import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade';
 
 const Index = () => {

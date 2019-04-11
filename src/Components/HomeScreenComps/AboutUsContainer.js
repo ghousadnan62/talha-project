@@ -1,6 +1,10 @@
 import React from 'react';
 import '../../App.css';
 import MaterialUiCardComp from './materialUICardComp';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import MediaQuery from 'react-responsive';
+import {ScreenBreakPoint1} from "../Utilities/ScreenBreakPoint";
 
 
 const AboutUsContainer = () => {
@@ -41,17 +45,31 @@ const AboutUsContainer = () => {
             <div className={'titleStyling themeDarkFontColor'}>
                 About Us
             </div>
-            <div className={'textStyling themeDarkFontColor'}
-                 style={{
-                     paddingLeft: '3em',
-                     paddingRight: '3em'
-                 }}
-            >
-                Shelters Engineering services was formed by a group of vibrant engineers and architects from
-                professional institutions of Pakistan with the aim to provide general contracting, construction
-                management and pre-engineered metal building services to a broad range of residential, commercial and
-                industrial clients throughout the country.
-            </div>
+
+
+            <MediaQuery minWidth={ScreenBreakPoint1}>
+                <div className={'textStyling themeDarkFontColor'}
+                     style={{
+                         paddingLeft: '3em',
+                         paddingRight: '3em'
+                     }}
+                >
+                    Shelters Engineering services was formed by a group of vibrant engineers and architects from
+                    professional institutions of Pakistan with the aim to provide general contracting, construction
+                    management and pre-engineered metal building services to a broad range of residential, commercial
+                    and
+                    industrial clients throughout the country.
+                </div>
+            </MediaQuery>
+
+            <MediaQuery maxWidth={ScreenBreakPoint1}>
+                <div className={'textStyling themeDarkFontColor'}>
+                    Shelters Engineering provide general contracting,
+                    construction management and pre-engineered metal building services
+                    to a broad range of residential, commercial and industrial clients throughout the country.
+                </div>
+            </MediaQuery>
+
 
             <div className={'flexColumnCenter'}>
                 <div className={'subSubHeading themeDarkFontColor'}>
@@ -63,45 +81,53 @@ const AboutUsContainer = () => {
                     flexDirection: 'row',
                     flexWrap: 'wrap',
                 }}>
-                    <div style={{
-                        padding:'1em'
-                    }}>
-                        <MaterialUiCardComp
-                            officeName={'Islamabad Office'}
-                            officeAddress={islamabadAddress}
-                            eng1Name={islamabadEng1Name}
-                            eng1Ph={islamabadEng1Ph}
-                            eng2Name={islamabadEng2Name}
-                            eng2Ph={islamabadEng2Ph}
-                        />
-                    </div>
 
-                    <div style={{
-                        padding:'1em'
-                    }}>
-                        <MaterialUiCardComp
-                            officeName={'Lahore Office'}
-                            officeAddress={lahoreAddress}
-                            eng1Name={lahoreEng1Name}
-                            eng1Ph={lahoreEng1Ph}
-                            eng2Name={lahoreEng2Name}
-                            eng2Ph={lahoreEng2Ph}
-                        />
-                    </div>
+                    <Fade left delay={500}>
+                        <div style={{
+                            padding: '1em'
+                        }}>
+                            <MaterialUiCardComp
+                                officeName={'Islamabad Office'}
+                                officeAddress={islamabadAddress}
+                                eng1Name={islamabadEng1Name}
+                                eng1Ph={islamabadEng1Ph}
+                                eng2Name={islamabadEng2Name}
+                                eng2Ph={islamabadEng2Ph}
+                            />
+                        </div>
+                    </Fade>
 
 
-                    <div style={{
-                        padding:'1em'
-                    }}>
-                        <MaterialUiCardComp
-                            officeName={'Bahawalpur Office'}
-                            officeAddress={bahwalpurAddress}
-                            eng1Name={bahawalpurEngr1}
-                            eng1Ph={bahawalpurEng1ph}
-                            eng2Name={lahoreEng1Name}
-                            eng2Ph={lahoreEng1Ph}
-                        />
-                    </div>
+                    <Zoom>
+                        <div style={{
+                            padding: '1em'
+                        }}>
+                            <MaterialUiCardComp
+                                officeName={'Lahore Office'}
+                                officeAddress={lahoreAddress}
+                                eng1Name={lahoreEng1Name}
+                                eng1Ph={lahoreEng1Ph}
+                                eng2Name={lahoreEng2Name}
+                                eng2Ph={lahoreEng2Ph}
+                            />
+                        </div>
+                    </Zoom>
+
+
+                    <Fade right delay={500}>
+                        <div style={{
+                            padding: '1em'
+                        }}>
+                            <MaterialUiCardComp
+                                officeName={'Bahawalpur Office'}
+                                officeAddress={bahwalpurAddress}
+                                eng1Name={bahawalpurEngr1}
+                                eng1Ph={bahawalpurEng1ph}
+                                eng2Name={lahoreEng1Name}
+                                eng2Ph={lahoreEng1Ph}
+                            />
+                        </div>
+                    </Fade>
 
                 </div>
             </div>

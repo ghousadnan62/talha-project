@@ -139,6 +139,14 @@ const ServicesBriefIntro = () => {
                         <Fade left delay={200}>
                             <div className={'iconsStyling'}>
                                 <div className={'iconPosition'}>
+
+                                    <IconComp
+                                        iconName={faBuilding}
+                                        titleText={'Development'}
+                                    />
+                                </div>
+
+                                <div className={'iconPosition'}>
                                     <IconComp
                                         iconName={faDraftingCompass}
                                         titleText={'Designing'}
@@ -147,15 +155,8 @@ const ServicesBriefIntro = () => {
 
                                 <div className={'iconPosition'}>
                                     <IconComp
-                                        iconName={faBuilding}
-                                        titleText={'Infrastructure works'}
-                                    />
-                                </div>
-
-                                <div className={'iconPosition'}>
-                                    <IconComp
                                         iconName={faDoorOpen}
-                                        titleText={'Interior design works'}
+                                        titleText={'Interior Works'}
                                     />
                                 </div>
                             </div>

@@ -9,7 +9,6 @@ const SideDrawer = (props) => {
     return (
         <div >
             <Drawer
-                style={{backgroundColor:'blue'}}
                 anchor={"right"}
                 open={props.open}
                 onClose={() => props.onClose(false)}
