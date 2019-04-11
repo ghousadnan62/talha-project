@@ -42,13 +42,7 @@ const ContactUsCardComp = () => {
     return (
         <div className={'contactUSContentWrapper'}>
 
-            <div className={'border'}>
-
-                <div className={'subHeading themeDarkFontColor'}>
-                    Contact Us
-                </div>
-
-
+            <div>
                 {/*-----------------------Islamabad Office-------------------------*/}
 
                 <div className={'subSubHeading flexColumnCenter'}>

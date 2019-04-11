@@ -40,6 +40,10 @@ body {
     padding-top: 0.5em;
 }
 
+.spaceBetween{
+    justify-content: space-between;
+}
+
 /*------------------------
 Header Section
 ---------------------------
