@@ -3,9 +3,7 @@ import '../../App.css'
 import MediaQuery from 'react-responsive';
 import {ContactUsBreakPoint} from '../Utilities/ScreenBreakPoint';
 import ContactUsCardComp from '../HomeScreenComps/ContactUsCardComp';
-import MeetUsComp from '../HomeScreenComps/MeetUsComp';
-
-
+import MeetUsContainer from './MeetUsContainer'
 
 
 const AboutUsContainer = () => {
@@ -17,6 +15,7 @@ const AboutUsContainer = () => {
 
             {/*Content from Larger SCreens*/}
             <MediaQuery minWidth={ContactUsBreakPoint}>
+
                 <div className={'briefAboutUsWrapper'}>
                     <div className={'titleStyling themeDarkFontColor'}>
                         About Us
@@ -24,21 +23,23 @@ const AboutUsContainer = () => {
 
 
                     <div className={'aboutUSContentWrapper'}>
-
-                        <ContactUsCardComp/>
-
+                        <div style={{
+                            flex:1
+                        }}>
+                            <ContactUsCardComp/>
+                        </div>
                         {/*-------------------------------------------------
 
                         Meet us Section
                         */}
 
                         <div className={'contactUSContentWrapper'}>
-                            <div className={'border'}>
+                            <div className={'border'} style={{flex:1}}>
                                 <div className={'subHeading themeDarkFontColor'}>
                                     Meet Us
                                 </div>
                                 <div>
-                                    <MeetUsComp/>
+                                    <MeetUsContainer/>
                                 </div>
                             </div>
                         </div>
