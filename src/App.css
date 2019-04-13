@@ -123,7 +123,8 @@ Our Serives (Home Screen)
 
 .iconPosition {
     flex: 1;
-    margin-top: 1em;
+    margin: 0.65em;
+
 }
 
 .bordered {

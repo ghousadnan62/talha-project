@@ -25,7 +25,7 @@ const ServicesBriefIntro = () => {
             <MediaQuery minWidth={ScreenBreakPoint1}>
                 <div className={'servicesInfoWrapper themeBackground'}
                      style={{
-                        /* height: `${window.innerHeight}px`*/
+                         /* height: `${window.innerHeight}px`*/
                      }}
                 >
 
@@ -139,10 +139,9 @@ const ServicesBriefIntro = () => {
                         <Fade left delay={200}>
                             <div className={'iconsStyling'}>
                                 <div className={'iconPosition'}>
-
                                     <IconComp
                                         iconName={faBuilding}
-                                        titleText={'Development'}
+                                        titleText={'Infrastructure Development'}
                                     />
                                 </div>
 
@@ -156,7 +155,7 @@ const ServicesBriefIntro = () => {
                                 <div className={'iconPosition'}>
                                     <IconComp
                                         iconName={faDoorOpen}
-                                        titleText={'Interior Works'}
+                                        titleText={'Interior Design Works'}
                                     />
                                 </div>
                             </div>
@@ -209,7 +208,7 @@ const ServicesBriefIntro = () => {
                                 <div className={'iconPosition'}>
                                     <IconComp
                                         iconName={faLeaf}
-                                        titleText={' Green building Design '}
+                                        titleText={' Green Design '}
                                     />
                                 </div>
                             </div>

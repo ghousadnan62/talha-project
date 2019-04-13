@@ -25,7 +25,7 @@ const AboutUsContainer = () => {
     const lahoreAddress = '126-C Iqabl Avenue-III, Lahore';
     const lahoreEng1Name = 'Engr. Adeel Jaffer';
     const lahoreEng1Ph = '+92 307 0431104';
-    const lahoreEng2Name = 'Talha Bin Hamid';
+    const lahoreEng2Name = 'Engr. Talha Bin Hamid';
     const lahoreEng2Ph = '+92 331 4762120';
 
 
@@ -47,6 +47,9 @@ const AboutUsContainer = () => {
             </div>
 
 
+
+
+            {/*MediaQuery for Laptops and larger screen*/}
             <MediaQuery minWidth={ScreenBreakPoint1}>
                 <div className={'textStyling themeDarkFontColor'}
                      style={{
@@ -62,6 +65,8 @@ const AboutUsContainer = () => {
                 </div>
             </MediaQuery>
 
+
+            {/*MediaQuery for smaller Screen*/}
             <MediaQuery maxWidth={ScreenBreakPoint1}>
                 <div className={'textStyling themeDarkFontColor'}>
                     Shelters Engineering provide general contracting,

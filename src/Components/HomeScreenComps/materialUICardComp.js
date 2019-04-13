@@ -58,7 +58,7 @@ const MaterialUiCardComp = (props) => {
                             marginTop:'-2em'
                         }}
                     >
-                        <p style={{paddingRight:'1em'}}>{props.eng1Name}</p>
+                        <p style={{paddingRight:'1em', fontSize:'0.8em'}}>{props.eng1Name}</p>
                         <p>{props.eng1Ph}</p>
                     </div>
 
@@ -67,7 +67,7 @@ const MaterialUiCardComp = (props) => {
                              marginTop:'-1.5em'
                          }}
                     >
-                        <p>{props.eng2Name}</p>
+                        <p  style={{paddingRight:'1em', fontSize:'0.8em'}}>{props.eng2Name}</p>
                         <p>{props.eng2Ph}</p>
                     </div>
 
