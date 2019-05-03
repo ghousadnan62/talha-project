@@ -12,10 +12,17 @@ body {
     text-transform: uppercase;
 }
 
+.robotoFont{
+    font-family: Roboto;
+}
+
 .fontRighteous {
     font-family: Righteous;
 }
 
+.boxed{
+   border-style: solid;
+}
 .themeFontColor {
     color: #FBF5C5;
 }
@@ -236,4 +243,14 @@ Brief About Us Section
 
 .headingPadding{
     padding: 0.75em;
+}
+
+/*_-------------------------------------------------
+paragraph stying
+*/
+
+.paragraphStyling{
+    padding-top: 2em;
+    padding-left: 5em;
+    padding-right: 5em;
 }

@@ -1,9 +1,14 @@
 import React from 'react';
+import WhoAreWeComp from '../Components/AboutUsScreenComps/WhoAreWeComp';
+
 
 const AboutUsScreen = () => {
     return (
-        <div>
-            Hello from About Us Screen
+        <div className={"body"}
+            style={{
+            paddingTop:'4em'
+        }}>
+            <WhoAreWeComp/>
         </div>
     );
 };

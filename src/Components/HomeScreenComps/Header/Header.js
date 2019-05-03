@@ -52,7 +52,7 @@ class Header extends Component {
             <AppBar
                 position={'fixed'}
                 style={{
-                    backgroundColor: this.state.headerShow ? '#281e11' : 'transparent',
+                    backgroundColor: this.state.headerShow ? '#281e11' : '#281e11',
                     boxShadow: 'none'
                 }}
             >
@@ -86,17 +86,17 @@ class Header extends Component {
                             flexDirection:'row'
                         }}>
 
-                            <div className={"headingPadding"}><NavLink to={"/AboutUs"} className={'linkStyling'}>ABOUT US</NavLink></div>
+                            <div className={"headingPadding"}><NavLink to={"/AboutUs"} className={'linkStyling robotoFont'}>ABOUT US</NavLink></div>
 
-                            <div className={"headingPadding"}><NavLink to={"/OurServices"} className={'linkStyling'}>SERVICES</NavLink></div>
+                            <div className={"headingPadding"}><NavLink to={"/OurServices"} className={'linkStyling robotoFont'}>SERVICES</NavLink></div>
 
-                            <div className={"headingPadding"}><NavLink to={"/Locations"} className={'linkStyling'}>LOCATIONS</NavLink></div>
+                            <div className={"headingPadding"}><NavLink to={"/Locations"} className={'linkStyling robotoFont'}>LOCATIONS</NavLink></div>
 
-                            <div className={"headingPadding"}><NavLink to={"/Projects"} className={'linkStyling'}>PROJECTS</NavLink></div>
+                            <div className={"headingPadding"}><NavLink to={"/Projects"} className={'linkStyling robotoFont'}>PROJECTS</NavLink></div>
 
-                            <div className={"headingPadding"}><NavLink to={"/OurAssociates"} className={'linkStyling'}>OUR ASSOCIATES</NavLink></div>
+                            <div className={"headingPadding"}><NavLink to={"/OurAssociates"} className={'linkStyling robotoFont'}>OUR ASSOCIATES</NavLink></div>
 
-                            <div className={"headingPadding"}><NavLink to={"/Blog"} className={'linkStyling'}>BLOG</NavLink></div>
+                            <div className={"headingPadding"}><NavLink to={"/Blog"} className={'linkStyling robotoFont'}>BLOG</NavLink></div>
 
                         </div>
                     </MediaQuery>
