@@ -30,7 +30,7 @@ const ImageSlider = () => {
                     <div
                         className={'sliderImage'}
                         style={{
-                            background:`url(${slideThree}`,
+                            background:`url(${slideThree})`,
                             height:`${window.innerHeight}px`,
                             backgroundPosition: "center",
                             backgroundSize:"cover"
@@ -43,7 +43,7 @@ const ImageSlider = () => {
                     <div
                         className={'sliderImage'}
                         style={{
-                            background:`url(${slideTwo}`,
+                            background:`url(${slideTwo})`,
                             height:`${window.innerHeight}px`,
                             backgroundPosition: "center",
                             backgroundSize:"cover"
@@ -56,7 +56,7 @@ const ImageSlider = () => {
                     <div
                         className={'sliderImage'}
                         style={{
-                            background:`url(${slideOne}`,
+                            background:`url(${slideOne})`,
                             height:`${window.innerHeight}px`,
                             backgroundPosition: "center",
                             backgroundSize:"cover"

@@ -251,6 +251,12 @@ paragraph stying
 
 .paragraphStyling{
     padding-top: 2em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.paragraphPadding{
+    padding-left: 10%;
+    padding-right: 10%;
 }
