@@ -260,3 +260,19 @@ paragraph stying
     padding-left: 10%;
     padding-right: 10%;
 }
+
+/*-------------------------
+OUr Vision Circle
+*/
+.ourVisionCircle{
+    width:3em;
+    height:3em;
+    border-radius:50%;
+    background-color:#FBF5C5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight: bolder;
+    font-size: larger;
+
+}
