@@ -226,3 +226,14 @@ Brief About Us Section
 }
 
 
+
+/*-------------------------------------------------------------------*/
+/*Link Styling*/
+.linkStyling{
+    text-decoration: none;
+    color: #FBF5C5;
+}
+
+.headingPadding{
+    padding: 0.75em;
+}

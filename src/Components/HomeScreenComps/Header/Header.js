@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar/index';
 import Toolbar from '@material-ui/core/Toolbar/index';
 import '../../../App.css';
-import ButtonComp from '../../Utilities/ButtonComp'
 import MediaQuery from 'react-responsive';
 import IconButton from '@material-ui/core/IconButton';
 import IconMenu from '@material-ui/icons/Menu'
 import SideDrawer from './SideDrawer'
 import {ScreenBreakPoint1} from '../../Utilities/ScreenBreakPoint'
+import {NavLink} from "react-router-dom";
+
 
 class Header extends Component {
 
@@ -57,7 +58,7 @@ class Header extends Component {
             >
                 <Toolbar>
                     <div className={'headerContainer'}>
-                        SHELTERS
+                        <NavLink to={"/"} className={'linkStyling'}>SHELTERS</NavLink>
                     </div>
 
 
@@ -80,30 +81,24 @@ class Header extends Component {
 
                     {/*Code for Handling larger devices*/}
                     <MediaQuery minWidth={ScreenBreakPoint1}>
-                        <ButtonComp>
-                            about us
-                        </ButtonComp>
+                        <div style={{
+                            display:'flex',
+                            flexDirection:'row'
+                        }}>
 
-                        <ButtonComp>
-                            services
-                        </ButtonComp>
+                            <div className={"headingPadding"}><NavLink to={"/AboutUs"} className={'linkStyling'}>ABOUT US</NavLink></div>
 
-                        <ButtonComp>
-                            locations
-                        </ButtonComp>
+                            <div className={"headingPadding"}><NavLink to={"/OurServices"} className={'linkStyling'}>SERVICES</NavLink></div>
 
-                        <ButtonComp>
-                            projects
-                        </ButtonComp>
+                            <div className={"headingPadding"}><NavLink to={"/Locations"} className={'linkStyling'}>LOCATIONS</NavLink></div>
 
-                        <ButtonComp>
-                            our associates
-                        </ButtonComp>
+                            <div className={"headingPadding"}><NavLink to={"/Projects"} className={'linkStyling'}>PROJECTS</NavLink></div>
 
-                        <ButtonComp>
-                            Blog
-                        </ButtonComp>
+                            <div className={"headingPadding"}><NavLink to={"/OurAssociates"} className={'linkStyling'}>OUR ASSOCIATES</NavLink></div>
 
+                            <div className={"headingPadding"}><NavLink to={"/Blog"} className={'linkStyling'}>BLOG</NavLink></div>
+
+                        </div>
                     </MediaQuery>
 
 

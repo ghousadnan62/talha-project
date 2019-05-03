@@ -12,7 +12,6 @@ export default class HomeScreen extends Component {
     render() {
         return (
             <div>
-                <Header/>
                 <Slider/>
                 <ServicesIntro/>
                 <AboutUsContainer/>

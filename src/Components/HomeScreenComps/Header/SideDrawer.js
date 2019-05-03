@@ -4,6 +4,7 @@ import List from '@material-ui/core/List/index';
 import ListItem from '@material-ui/core/ListItem/index';
 import Divider from '@material-ui/core/Divider/index'
 
+import {NavLink} from "react-router-dom";
 
 const SideDrawer = (props) => {
     return (
@@ -18,34 +19,34 @@ const SideDrawer = (props) => {
             >
                 <List component='nav'>
 
-                    <ListItem button onClick={() => console.log('About Us')}>
-                        ABOUT US
+                    <ListItem>
+                        <NavLink to={"/AboutUs"}>ABOUT US</NavLink>
                     </ListItem>
                     <Divider/>
 
 
-                    <ListItem button onClick={() => console.log('Services')}>
-                        SERVICES
+                    <ListItem>
+                        <NavLink to={"/OurServices"}>SERVICES</NavLink>
                     </ListItem>
                     <Divider/>
 
-                    <ListItem button onClick={() => console.log('Offices')}>
-                        LOCATIONS
+                    <ListItem>
+                        <NavLink to={"/Locations"}>LOCATIONS</NavLink>
                     </ListItem>
                     <Divider/>
 
-                    <ListItem button onClick={() => console.log('Project')}>
-                        PROJECTS
+                    <ListItem >
+                        <NavLink to={"/Projects"}>PROJECTS</NavLink>
                     </ListItem>
                     <Divider/>
 
-                    <ListItem button onClick={() => console.log('Project')}>
-                        OUR ASSOCIATES
+                    <ListItem>
+                        <NavLink to={"/OurAssociates"}>OUR ASSOCIATES</NavLink>
                     </ListItem>
                     <Divider/>
 
-                    <ListItem button onClick={() => console.log('Project')}>
-                        BLOG
+                    <ListItem>
+                        <NavLink to={"/Blog"}>BLOG</NavLink>
                     </ListItem>
                     <Divider/>
 
