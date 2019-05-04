@@ -51,6 +51,10 @@ body {
     justify-content: space-between;
 }
 
+.justifyCenter{
+    justify-content: center;
+}
+
 /*------------------------
 Header Section
 ---------------------------
@@ -265,8 +269,9 @@ paragraph stying
 OUr Vision Circle
 */
 .ourVisionCircle{
-    width:3em;
-    height:3em;
+    margin-left: 0.2em;
+    width:2em;
+    height:2em;
     border-radius:50%;
     background-color:#FBF5C5;
     display:flex;
@@ -274,5 +279,8 @@ OUr Vision Circle
     align-items:center;
     font-weight: bolder;
     font-size: larger;
+}
 
+.marginText{
+    margin-top: 1em;
 }

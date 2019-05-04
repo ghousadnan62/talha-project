@@ -8,9 +8,9 @@ import OurAssosiatesScreen from './Screens/OurAssosiatesScreen';
 import ProjectsScreen from './Screens/ProjectsScreen';
 import ServicesScreen from './Screens/ServicesScreen';
 
-
-
 import Header from "./Components/HomeScreenComps/Header/Header";
+import Footer from "./Components/HomeScreenComps/FooterComp";
+
 import {BrowserRouter as Router,Route} from "react-router-dom";
 
 
@@ -29,6 +29,7 @@ class App extends Component {
                     <Route path={"/OurAssociates"} component={OurAssosiatesScreen}/>
                     <Route path={"/Projects"} component={ProjectsScreen}/>
                     <Route path={"/OurServices"} component={ServicesScreen}/>
+                    <Footer/>
                 </Router>
 
 
